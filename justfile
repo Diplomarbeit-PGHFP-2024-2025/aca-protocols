@@ -1,0 +1,17 @@
+set windows-shell := ["powershell.exe", "-NoLogo", "-Command"]
+
+alias i := install
+
+install:
+    poetry install
+
+lint:
+    poetry run ruff check
+    poetry run ruff format --check
+
+fix:
+    poetry run ruff check --fix
+    poetry run ruff format
+
+run:
+    poetry run python src/aca_protocols.py
