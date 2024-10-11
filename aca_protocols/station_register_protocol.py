@@ -1,4 +1,4 @@
-from uagents import Protocol, Model
+from uagents import Model
 
 
 class StationRegisterRequest(Model):
@@ -8,6 +8,3 @@ class StationRegisterRequest(Model):
 
 class StationRegisterResponse(Model):
     pass
-
-
-protocol = Protocol()

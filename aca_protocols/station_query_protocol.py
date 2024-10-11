@@ -1,4 +1,4 @@
-from uagents import Protocol, Model
+from uagents import Model
 
 
 class StationQueryRequest(Model):
@@ -9,6 +9,3 @@ class StationQueryRequest(Model):
 
 class StationQueryResponse(Model):
     stations: list[str]
-
-
-protocol = Protocol()
