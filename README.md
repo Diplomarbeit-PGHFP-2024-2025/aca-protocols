@@ -21,15 +21,6 @@ install deps <br>
 
 ---
 
-start the GasGoblin agent <br>
-`just run`
-
-start the testing station agent <br>
-`just station`
-
-start the testing car agent <br>
-`just car`
-
 ### ruff
 
 this project uses `ruff`
