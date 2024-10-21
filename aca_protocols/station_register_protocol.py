@@ -7,4 +7,4 @@ class StationRegisterRequest(Model):
 
 
 class StationRegisterResponse(Model):
-    pass
+    ttl: int  # Time to Live in seconds
