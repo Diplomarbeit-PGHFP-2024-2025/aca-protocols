@@ -11,7 +11,7 @@ packages = [
 
 [tool.poetry.dependencies]
 python = ">=3.12,<3.13"
-uagents = "^0.16.2"
+uagents = "^0.17.0"
 ruff = "^0.6.8"
 setuptools = "^75.1.0"
 
