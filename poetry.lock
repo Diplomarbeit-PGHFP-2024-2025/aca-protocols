@@ -1324,13 +1324,13 @@ files = [
 
 [[package]]
 name = "uagents"
-version = "0.16.2"
+version = "0.17.0"
 description = "Lightweight framework for rapid agent-based development"
 optional = false
 python-versions = "<3.13,>=3.9"
 files = [
-    {file = "uagents-0.16.2-py3-none-any.whl", hash = "sha256:40f6a2bb1fe35e414d3d37aff0dee4d2c6b97c5daac48ee7e3dbc25b455cc162"},
-    {file = "uagents-0.16.2.tar.gz", hash = "sha256:3f46ad9772a7fbfe869d8486624d8bb14b3a6ce31520bc3103384ad6d873413d"},
+    {file = "uagents-0.17.0-py3-none-any.whl", hash = "sha256:51a9ef36e43634efe632a5f45a82c9c2e829c5ab466fcdac32dfad8fdd74ba82"},
+    {file = "uagents-0.17.0.tar.gz", hash = "sha256:f15d3709813d8bd75c71de1770b274419b74537740ffd837071a92a4ebc8b140"},
 ]
 
 [package.dependencies]
@@ -1564,4 +1564,4 @@ propcache = ">=0.2.0"
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.12,<3.13"
-content-hash = "126e5a8149edc43f1a3857e1ed49e3128f75ce24eaa2250b51945deafc951afb"
+content-hash = "dbc9dc6838d16d4e38a1efbccf2d93550d92fe7bff254383031413f38d4dc27d"
