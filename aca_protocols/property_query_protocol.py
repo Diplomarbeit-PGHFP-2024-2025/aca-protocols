@@ -1,3 +1,5 @@
+from typing import Tuple
+
 from uagents import Model
 
 
@@ -10,7 +12,7 @@ class PropertyQueryResponse(Model):
     # Second value: unix-timestamp when the timeframe ends
     open_time_frames: list[(int, int)]
     # Representing long and lat of the station
-    geo_point: (float, float)
+    geo_point: Tuple[float, float]
     cost_per_kwh: float
     charging_wattage: int
     green_energy: bool
