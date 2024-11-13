@@ -1,6 +1,10 @@
 from .car_register_protocol import CarRegisterRequest, CarRegisterResponse
 from .station_query_protocol import StationQueryRequest, StationQueryResponse
-from .property_query_protocol import PropertyQueryRequest, PropertyQueryResponse
+from .property_query_protocol import (
+    PropertyQueryRequest,
+    PropertyQueryResponse,
+    PropertyData,
+)
 from .station_register_protocol import StationRegisterRequest, StationRegisterResponse
 from .acs_registry_id import acs_id
 
@@ -9,6 +13,7 @@ __all__ = [
     "StationQueryResponse",
     "StationRegisterRequest",
     "StationRegisterResponse",
+    "PropertyData",
     "PropertyQueryRequest",
     "PropertyQueryResponse",
     "CarRegisterRequest",
