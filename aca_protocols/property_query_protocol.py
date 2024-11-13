@@ -8,6 +8,9 @@ class PropertyQueryRequest(Model):
 
 
 class PropertyQueryResponse(Model):
+    properties: PropertyData
+
+class PropertyData():
     # First value: unix-timestamp when the timeframe starts
     # Second value: unix-timestamp when the timeframe ends
     open_time_frames: list[Tuple[int, int]]
@@ -16,3 +19,14 @@ class PropertyQueryResponse(Model):
     cost_per_kwh: float
     charging_wattage: int
     green_energy: bool
+
+    def toJson(self):
+        return json.dumps(
+            self,
+            default=lambda o: o.__dict__,
+            sort_keys=True,
+            indent=4)
+
+    @staticmethod
+    def fromJson(data: str):
+        return json.loads(data, object_hook=lambda d: PropertyQueryResponse(**d))
