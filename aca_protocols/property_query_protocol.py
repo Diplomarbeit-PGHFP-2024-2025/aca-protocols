@@ -29,4 +29,4 @@ class PropertyData():
 
     @staticmethod
     def fromJson(data: str):
-        return json.loads(data, object_hook=lambda d: PropertyQueryResponse(**d))
+        return json.loads(data, object_hook=lambda d: PropertyData(**d))
