@@ -3,16 +3,7 @@ import json
 from uagents import Model
 
 
-class PropertyData:
-    def __init__(
-        self, open_time_frames, geo_point, cost_per_kwh, charging_wattage, green_energy
-    ):
-        self.open_time_frames = open_time_frames
-        self.geo_point = geo_point
-        self.cost_per_kwh = cost_per_kwh
-        self.charging_wattage = charging_wattage
-        self.green_energy = green_energy
-
+class PropertyData(Model):
     # First value: unix-timestamp when the timeframe starts
     # Second value: unix-timestamp when the timeframe ends
     open_time_frames: list[Tuple[int, int]]
@@ -35,4 +26,4 @@ class PropertyQueryRequest(Model):
 
 
 class PropertyQueryResponse(Model):
-    properties: PropertyData
+    properties: object
