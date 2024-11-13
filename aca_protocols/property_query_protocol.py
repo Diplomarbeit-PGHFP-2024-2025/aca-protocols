@@ -2,6 +2,7 @@ from typing import Tuple
 import json
 from uagents import Model
 
+
 class PropertyData(Model):
     # First value: unix-timestamp when the timeframe starts
     # Second value: unix-timestamp when the timeframe ends
