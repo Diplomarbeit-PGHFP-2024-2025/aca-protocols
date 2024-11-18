@@ -5,6 +5,9 @@ alias i := install
 install:
     poetry install
 
+lock:
+    poetry lock
+
 lint:
     poetry run ruff check
     poetry run ruff format --check
