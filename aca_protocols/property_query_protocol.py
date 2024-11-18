@@ -13,11 +13,11 @@ class PropertyData(Model):
     charging_wattage: int
     green_energy: bool
 
-    def toJson(self):
+    def to_json(self):
         return json.dumps(self, default=lambda o: o.__dict__, sort_keys=True, indent=4)
 
     @staticmethod
-    def fromJson(data: str):
+    def from_json(data: str):
         return json.loads(data, object_hook=lambda d: PropertyData(**d))
 
 
