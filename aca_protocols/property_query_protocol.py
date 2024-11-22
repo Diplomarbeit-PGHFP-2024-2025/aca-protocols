@@ -26,4 +26,4 @@ class PropertyQueryRequest(Model):
 
 
 class PropertyQueryResponse(Model):
-    properties: object
+    properties: str  # is the json representation of an object of PropertyData (expected return of to_json)
