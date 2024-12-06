@@ -11,7 +11,7 @@ class PaymentRequest(Model):
 
 
 class TransactionInfo(Model):
-    tx_hash: str
+    transaction_hash: str
 
 
 MIN_TEST_AMOUNT = 100
