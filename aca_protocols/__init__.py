@@ -7,6 +7,7 @@ from .property_query_protocol import (
 )
 from .station_register_protocol import StationRegisterRequest, StationRegisterResponse
 from .acs_registry_id import acs_id
+from .ac_cancel_timeframe import CancelTimeFrameReqeust, CancelTimeFrameResponse
 
 __all__ = [
     "StationQueryRequest",
@@ -23,4 +24,6 @@ __all__ = [
     "property_query_protocol",
     "car_register_protocol",
     "acs_id",
+    "CancelTimeFrameReqeust",
+    "CancelTimeFrameResponse",
 ]
