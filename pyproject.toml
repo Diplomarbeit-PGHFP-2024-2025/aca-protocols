@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "aca-protocols"
-version = "0.2.5"
+version = "0.3.0"
 description = ""
 authors = ["tobinio <Tobias.frischmann1@gmail.com>"]
 readme = "README.md"
@@ -11,8 +11,8 @@ packages = [
 
 [tool.poetry.dependencies]
 python = ">=3.12,<3.13"
-uagents = "^0.17.1"
-ruff = "^0.7.4"
+uagents = "^0.19.0"
+ruff = "^0.9.6"
 setuptools = "^75.5.0"
 
 
